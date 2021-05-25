@@ -9,8 +9,8 @@ public class Ex05 {
 		Scanner sc = new Scanner(System.in);
 		
 		int pay = 10000;
-		double pay8 = pay*1.5;
-		int pay9 = (int)pay8;
+		int pay8 = (int)(pay*1.5);
+		
 		
 		System.out.print("근무시간:");
 		int time = sc.nextInt();
@@ -20,7 +20,7 @@ public class Ex05 {
 			System.out.println(time);
 		}else if(time>8) {
 			time = time-8;
-			int aaa = time*pay9+80000;
+			int aaa = time*pay8+80000;
 			System.out.println("임금은 " + aaa + "원 입니다.");
 		}
 		
